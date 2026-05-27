@@ -73,6 +73,23 @@
   .upwork-note { background: #fff8ed; border: 1px solid rgba(197,165,90,0.4); border-left: 3px solid var(--gold); border-radius: 2px; padding: 1rem 1.25rem; margin-top: 2rem; font-size: 13px; color: #5a4a1f; display: flex; gap: 10px; align-items: flex-start; }
   .upwork-note i { color: var(--gold); font-size: 18px; flex-shrink: 0; margin-top: 1px; }
 
+  .samples-section { background: #f0ece2; padding: 4rem 0; }
+  .samples-inner { max-width: 900px; margin: 0 auto; padding: 0 2rem; }
+  .sample-card { background: #fff; border: 1px solid rgba(26,35,64,0.1); border-top: 3px solid var(--gold); border-radius: 2px; margin-bottom: 1.5rem; overflow: hidden; }
+  .sample-header { background: var(--navy); padding: 0.6rem 1.25rem; display: flex; justify-content: space-between; align-items: center; }
+  .sample-source { font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 500; }
+  .sample-badge { font-size: 11px; color: rgba(232,213,160,0.6); letter-spacing: 0.06em; }
+  .sample-body { display: grid; grid-template-columns: 1fr 1fr; }
+  .sample-col { padding: 1.25rem 1.5rem; }
+  .sample-col:first-child { border-right: 1px solid rgba(26,35,64,0.08); }
+  .sample-lang-label { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.5rem; font-weight: 500; }
+  .sample-text { font-size: 13.5px; color: #374151; line-height: 1.8; }
+  .sample-col:last-child .sample-text { font-family: 'Padauk', 'Myanmar Text', sans-serif; }
+  @media (max-width: 640px) {
+    .sample-body { grid-template-columns: 1fr; }
+    .sample-col:first-child { border-right: none; border-bottom: 1px solid rgba(26,35,64,0.08); }
+  }
+
   .cta-section { background: var(--navy); padding: 4rem 2rem; text-align: center; }
   .cta-section .section-title { color: #f5f0e8; margin-bottom: 1rem; }
   .cta-desc { font-size: 15px; color: rgba(245,240,232,0.6); max-width: 440px; margin: 0 auto 2rem; }
@@ -225,9 +242,12 @@
         <span class="project-tag">Film</span>
       </div>
       <div class="project-card">
-        <div class="project-lang">English → Burmese</div>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:0.5rem;">
+          <div class="project-lang" style="margin-bottom:0;">English → Burmese</div>
+          <span style="font-size:11px; font-weight:500; letter-spacing:0.08em; text-transform:uppercase; background:#fff3cd; color:#856404; border:1px solid #ffc107; padding:3px 10px; border-radius:2px;">⏳ In Progress</span>
+        </div>
         <div class="project-title">From</div>
-        <p class="project-desc">Subtitles for the mystery-horror series, carefully handling suspenseful dialogue and atmospheric tone in Burmese.</p>
+        <p class="project-desc">Subtitles for the mystery-horror series, carefully handling suspenseful dialogue and atmospheric tone in Burmese. Currently in progress.</p>
         <span class="project-tag">Subtitles</span>
         <span class="project-tag">Horror Series</span>
       </div>
@@ -238,6 +258,68 @@
       <div>All communication and payments are handled exclusively through Upwork. Please use Upwork Messages to reach out — this keeps your project protected under Upwork's Payment Protection.</div>
     </div>
   </section>
+
+  <div class="samples-section">
+    <div class="samples-inner">
+      <p class="section-label">Translation Samples</p>
+      <h2 class="section-title">See the work in action</h2>
+      <div class="section-rule"></div>
+
+      <div class="sample-card">
+        <div class="sample-header">
+          <span class="sample-source">Sample 1</span>
+          <span class="sample-badge">English → Burmese</span>
+        </div>
+        <div class="sample-body">
+          <div class="sample-col">
+            <div class="sample-lang-label">English</div>
+            <p class="sample-text">In 100 years, nobody will care about the rules we broke or who won the war. They will only care if we survived.</p>
+            <p style="margin-top:0.75rem; font-size:11px; color:var(--gold); letter-spacing:0.08em; font-weight:500;">— The 100 · Clarke Griffin</p>
+          </div>
+          <div class="sample-col">
+            <div class="sample-lang-label">Burmese</div>
+            <p class="sample-text">နောက်အနှစ် ၁၀၀ ကြာရင် ငါတို့ ဘာစည်းကမ်းတွေ ဖောက်ဖျက်ခဲ့လဲ၊ ဘယ်သူတွေ စစ်ပွဲနိုင်သွားလဲဆိုတာ ဘယ်သူမှ ဂရုစိုက်နေမှာ မဟုတ်ဘူး။ ငါတို့ အသက်ရှင်ကျန်ခဲ့ရဲ့လား ဆိုတာပဲ သူတို့ စိတ်ဝင်စားကြမှာ။</p>
+            <p style="margin-top:0.75rem; font-size:11px; color:var(--gold); letter-spacing:0.08em; font-weight:500;">— ကလက်ခ် ဂရစ်ဖင်</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample-card">
+        <div class="sample-header">
+          <span class="sample-source">Sample 2</span>
+          <span class="sample-badge">English → Burmese</span>
+        </div>
+        <div class="sample-body">
+          <div class="sample-col">
+            <div class="sample-lang-label">English</div>
+            <p class="sample-text">Don't just judge me by the cover. If you hire me, I guarantee you won't regret it.</p>
+          </div>
+          <div class="sample-col">
+            <div class="sample-lang-label">Burmese</div>
+            <p class="sample-text">ကျွန်တော့်ကို အပြင်ပန်းမြင်ရုံနဲ့ မဆုံးဖြတ်ပါနဲ့။ ကျွန်တော့်ကို အလုပ်ခန့်မယ်ဆိုရင် စိတ်မပျက်စေရဘူးလို့ အာမခံပါတယ်။</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="sample-card">
+        <div class="sample-header">
+          <span class="sample-source">Sample 3</span>
+          <span class="sample-badge">English → Burmese</span>
+        </div>
+        <div class="sample-body">
+          <div class="sample-col">
+            <div class="sample-lang-label">English</div>
+            <p class="sample-text">Life is not a race to be won, but a journey to be experienced. Many people spend their whole lives rushing toward the finish line, only to realize that they missed the beautiful scenery along the way. True happiness is found when we learn to appreciate the present moment, rather than constantly worrying about the future.</p>
+          </div>
+          <div class="sample-col">
+            <div class="sample-lang-label">Burmese</div>
+            <p class="sample-text">ဘဝဆိုတာ နိုင်အောင်ပြိုင်ရမယ့် အပြေးပြိုင်ပွဲတစ်ခု မဟုတ်ပါဘူး၊ ဖြတ်သန်းခံစားသွားရမယ့် ခရီးတစ်ခုပါ။ လူတော်တော်များများက ပန်းတိုင်ကိုပဲ အတင်းအလောတကြီး သွားနေကြလို့ လမ်းဘေးဝဲယာက လှပတဲ့ ရှုခင်းတွေကို လက်လွတ်ပွားခဲ့ရမှန်း နောက်မှ သိကြရတယ်။ တကယ့်ပျော်ရွှင်မှုဆိုတာ အနာဂတ်အတွက်ပဲ တွေးပြီး စိုးရိမ်နေမယ့်အစား လက်ရှိအချိန်လေးကို တန်ဖိုးထားတတ်လာတဲ့အခါမှ ရတာပါ။</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
   <div class="cta-section">
     <p class="section-label" style="color: var(--gold);">Ready to work together?</p>
